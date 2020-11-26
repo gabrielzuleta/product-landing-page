@@ -70,7 +70,7 @@ a:hover {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	header {
 		height: 100px;
 		display: flex;
@@ -122,7 +122,7 @@ input {
 	font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	.container {
 		margin-top: 120px;
 	}
@@ -146,6 +146,7 @@ input {
 
 #overview-title {
 	font-size: 200px;
+	text-align: center;
 }
 
 iframe {
@@ -154,7 +155,7 @@ iframe {
 	height: 400px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	#overview-title {
 		font-size: 140px;
 		text-align: center;
@@ -239,7 +240,7 @@ button {
 	font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	#buy {
 		width: 100%;
 		display: flex;
@@ -275,7 +276,7 @@ footer > span {
 	text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	footer {
 		display: flex;
 		flex-direction: column;
