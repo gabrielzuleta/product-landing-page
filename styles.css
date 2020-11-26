@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	color: #fff;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #000;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	margin-left: 5px;
+}
+
+#header-img {
+	margin-top: 12px;
+}
+
+#title {
+	margin-top: 12px;
+	margin-left: 3px;
+	font-size: 25px;
+}
+
+ul {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #999999;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #2F79DA;
+}
+
+#buy-btn {
+	background-color: #2F79DA;
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	color: #fff;
+}
+
+
+
+@media (max-width: 600px) {
+	header {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.container {
+	margin-top: 70px;
+}
+
+#hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#form {
+	width: 400px;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+input {
+	width: 300px;
+	max-width: 500px;
+	height: 30px;
+	text-align: center;
+	border-radius: 20px;
+	margin-bottom: 5px;
+}
+
+#email {
+	border: none;
+	margin-top: 20px;
+}
+
+#submit {
+	background-color: #2F79DA;
+	border:none;
+	color: #fff;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.container {
+		margin-top: 120px;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	input {
+		width: 100%;
+	}
+}
+
+#overview {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+#overview-title {
+	font-size: 200px;
+}
+
+iframe {
+	margin-top: 20px;
+	width: 800px;
+	height: 400px;
+}
+
+@media (max-width: 600px) {
+	#overview-title {
+		font-size: 140px;
+		text-align: center;
+	}
+
+	iframe {
+		width: 500px;
+		height: 320px;
+	}
+}
+
+#specs {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.specs-text {
+	font-size: 23px;
+}
+
+.specs-titles {
+	font-size: 100px
+}
+
+#text1 {
+	width: 50%;
+	text-align: left;
+	margin-left: 5px;
+}
+
+#text2 {
+	width: 60%;
+	text-align: right;
+	margin-left: 39%;
+}
+
+#text3 {
+	width: 50%;
+	text-align: left;
+	margin-left: 5px;
+}
+
+#buy {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.product-img {
+	border-radius: 30px;
+}
+
+.product {
+	text-align: center;
+}
+
+.free {
+	color: #FF8200;
+}
+
+.shop-btn {
+	color: #fff;
+}
+
+.shop-btn:hover {
+	color: #fff;
+}
+
+
+button {
+	width: 70px;
+	height: 25px;
+	margin-top: 15px;
+	background: #2F79DA;
+	color: #fff;
+	border-radius: 20px;
+	border: none;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	#buy {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	button {
+		margin-bottom: 20px;
+	}
+
+	#airpods-wc {
+		margin-left: 10px;
+	}
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+footer > ul {
+	width: 320px;
+}
+
+footer > span {
+	margin-top: 14px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+}
