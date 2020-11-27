@@ -100,6 +100,10 @@ a:hover {
 	align-items: center;
 }
 
+#form-title {
+	text-align: center;
+}
+
 
 input {
 	width: 300px;
@@ -122,17 +126,19 @@ input {
 	font-weight: bold;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 	.container {
 		margin-top: 120px;
+		margin-left: auto;
 	}
 
-	form {
-		width: 100%;
+	#hero {
+		width: 80%;
+		margin: auto;
 	}
 
 	input {
-		width: 100%;
+		width: 80%;
 	}
 }
 
@@ -157,13 +163,13 @@ iframe {
 
 @media (max-width: 768px) {
 	#overview-title {
-		font-size: 140px;
+		width: 80%;
+		font-size: 100px;
 		text-align: center;
 	}
 
 	iframe {
-		width: 500px;
-		height: 320px;
+		width: 80%;
 	}
 }
 
@@ -198,6 +204,26 @@ iframe {
 	width: 50%;
 	text-align: left;
 	margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+	#specs {
+		width: 80%;
+	}
+
+	#text1 {
+		margin-left: 12%;
+	}
+
+	#text2 {
+		text-align: right;
+		margin-right: 0%;
+		margin-left: 52%;
+	}
+
+	#text3 {
+		margin-left: 12%;
+	}
 }
 
 #buy {
