@@ -70,7 +70,7 @@ a:hover {
 
 
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 	header {
 		height: 100px;
 		display: flex;
@@ -155,7 +155,7 @@ iframe {
 	height: 400px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 	#overview-title {
 		font-size: 140px;
 		text-align: center;
@@ -240,7 +240,7 @@ button {
 	font-weight: bold;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 	#buy {
 		width: 100%;
 		display: flex;
@@ -276,7 +276,7 @@ footer > span {
 	text-align: center;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 	footer {
 		display: flex;
 		flex-direction: column;
