@@ -3,7 +3,7 @@
 <head>
 	<title>AirPods</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta name="viewport" content="with=device-withd, initial-scale=1.0"
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
 </head>
 <div id="page-wrapper">
 	<header id="header">
@@ -25,17 +25,14 @@
 <body>
 	<div class="container">
 	<section id="hero">
-		<h2 id="form-title">Get the latest news about our products</h2>
-		<form id="form" action="https://www.freecodecamp.com/email-submit)">
-			<input type="email" name="email" id="email" placeholder="Enter your email" required>
-			<input type="submit" id="submit" class="form-btn" value="Subscribe">
-		</form>
-	</section>
-
-	<section id="overview">
 		<h1 id="overview-title">
 			AirPods Pro
 		</h1>
+
+		<img id="img-hero" src="Assets/airpods-pro-2.jpg" alt="AirPods Pro" height="1000" width="1000">
+	</section>
+
+	<section id="overview">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/1tpU8cpgY1I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</section>
 
@@ -89,7 +86,15 @@
 	</section>
 
 	<footer>
-		<span>
+		<div id="footer-form">
+			<h2 id="form-title">Get the latest news about our products</h2>
+		<form id="form" action="https://www.freecodecamp.com/email-submit)">
+			<input type="email" name="email" id="email" placeholder="Enter your email" required>
+			<input type="submit" id="submit" class="form-btn" value="Subscribe">
+		</form>
+		</div>
+
+			<span>
 			Copyright © 2020 Apple Inc. All rights reserved.
 		</span>
 
