@@ -4,14 +4,22 @@
 	<title>AirPods</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	 <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
 </head>
-<div id="page-wrapper">
 	<header id="header">
-	
 		<div class="logo">
-			<img src="Assets/apple-logo.png" height="25" width="20" alt="Apple logo" id="header-img">
+			<img src="Assets/apple-logo.png" alt="Apple logo" id="header-img">
 			<h1 id="title">AirPods</h1>
-	</div>
+		</div>
 
 		<nav id="nav-bar">
 		<ul id="menu">
@@ -21,7 +29,6 @@
 		</ul>
 		</nav>
 	</header>
-</div>
 <body>
 	<div class="container">
 	<section id="hero">
@@ -29,11 +36,7 @@
 			AirPods Pro
 		</h1>
 
-		<img id="img-hero" src="Assets/airpods-pro-2.jpg" alt="AirPods Pro" height="1000" width="1000">
-	</section>
-
-	<section id="overview">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/1tpU8cpgY1I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<img id="img-hero" src="Assets/airpods-pro-2.jpg" alt="AirPods Pro">
 	</section>
 
 	<section id="specs">
@@ -46,7 +49,7 @@
 
 		<div id="text2">
 			<p class="specs-text">Active Noise Cancellation</p>
-			<h1 class="specs-titles" id="specs-title-2">Sound that cuts out the noise.</h1>
+			<h1 class="specs-titles" id="specs-title-2">Sound that cuts out <span style="color: #02cc01">the noise</span>.</h1>
 			<p class="specs-text">
 				AirPods Pro are the only in-ear headphones with Active Noise Cancellation that continuously adapts to the geometry of your ear and the fit of the ear tips — blocking out the world so you can focus on what you’re listening to.
 			</p><br>
@@ -55,54 +58,70 @@
 		<div id="text3">
 			<p class="specs-text">Audio quality</p>
 			<h1 class="specs-titles">Everything you hear is unheard of.</h1>
-			<p class="specs-text">Enjoy superior sound quality with Adaptive EQ, which automatically tunes music to the shape of your ear for a rich, consistent listening experience.</p>
+			<p class="specs-text" id="p-3">Enjoy superior sound quality with Adaptive EQ, which automatically tunes music to the shape of your ear for a rich, consistent listening experience.</p>
 		</div>
 	</section>
 
 	<section id="buy">
 		<div class="product" id="airpods">
-			<img src="Assets/airpods.png" height="200" width="200" alt="Apple AirPods" class="product-img">
+			<img src="Assets/airpods.png" alt="Apple AirPods" class="product-img">
 			<p class="free">Free Engraving</p><br>
-			<p>AirPods with Charging Case</p><br>
-			<p>$159.00</p>
-			<button><a href="#" class="shop-btn">Buy</a></button>
+			<p class="product-title">AirPods with Charging Case</p><br>
+			<p class="price">$159.00</p>
+			<button class="shop-btn"><a href="https://www.paypal.com/" target="_blank">Buy</a></button>
 		</div>
 
 		<div class="product" id="airpods-wc">
-			<img src="Assets/airpods-wc.png" height="200" width="200" alt="AirPods with wireless charging case" class="product-img">
+			<img src="Assets/airpods-wc.png" alt="AirPods with wireless charging case" class="product-img" id="product-2">
 			<p class="free">Free Engraving</p><br>
-			<p>AirPods with Wireless Charging Case</p><br>
-			<p>$199.00</p>
-			<button class="shop-btn"><a href="#" class="shop-btn">Buy</a></button>
+			<p class="product-title">AirPods with Wireless Charging Case</p><br>
+			<p id="price-2" class="price">$199.00</p>
+			<button id="btn-2" class="shop-btn"><a href="https://www.paypal.com/" target="blank">Buy</a></button>
 		</div>
 
 		<div class="product" id="airpods-pro">
-			<img src="Assets/airpods-pro.png" height="200" width="200" alt="AirPods Pro with wireless charging case" class="product-img">
+			<img src="Assets/airpods-pro.png" alt="AirPods Pro with wireless charging case" class="product-img">
 			<p class="free">Free Engraving</p><br>
-			<p>AirPods Pro</p><br>
-			<p>$249.00</p>
-			<button><a href="#" class="shop-btn">Buy</a></button>
+			<p class="product-title">AirPods Pro</p><br>
+			<p class="price">$249.00</p>
+			<button class="shop-btn"><a href="https://www.paypal.com/" target="_blank">Buy</a></button>
 		</div>
 	</section>
 
 	<footer>
-		<div id="footer-form">
-			<h2 id="form-title">Get the latest news about our products</h2>
-		<form id="form" action="https://www.freecodecamp.com/email-submit)">
-			<input type="email" name="email" id="email" placeholder="Enter your email" required>
-			<input type="submit" id="submit" class="form-btn" value="Subscribe">
-		</form>
+		<div class="footer-row">
+			<img src="Assets/airpods-pro-2.jpg" alt="AirPods Pro">
+
+			<div class="col">
+				<h1>AirPods Pro</h1>
+				<br>
+				<p>Magic like you’ve never heard.</p>
+				<div class="col-links">
+					<a href="https://www.apple.com/airpods-pro/">Learn more</a>
+					<a href="https://www.apple.com/us/shop/goto/product/MWP22">Buy</a>
+				</div>
+			</div>
 		</div>
 
-			<span>
-			Copyright © 2020 Apple Inc. All rights reserved.
-		</span>
 
-		<ul>
-			<li><a href="#" class="ft-link">Privacy Policy    |</a></li>
-			<li><a href="#" class="ft-link">Terms of Use     |</a></li>
-			<li><a href="#" class="ft-link">Sales and Refunds     |</a></li>
-		</ul>
+		<div id="footer-form">
+			<h2 id="form-title">Get the latest news about our products</h2>
+			<form id="form" action="" autocomplete="on">
+				<input type="email" name="email" id="email" placeholder=" Enter your email" required>
+				<input type="submit" id="submit" class="form-btn" value="Subscribe">
+			</form>
+			</div>
+
+		<div class="footer-links">
+
+			<p>Copyright © 2020 Apple Inc. All rights reserved.</p>
+
+			<ul>
+				<li><a href="#" class="ft-link">Privacy Policy    |</a></li>
+				<li><a href="#" class="ft-link">Terms of Use     |</a></li>
+				<li><a href="#" class="ft-link">Sales and Refunds     |</a></li>
+			</ul>
+		</div>
 	</footer>
 	</div>
 </body>
